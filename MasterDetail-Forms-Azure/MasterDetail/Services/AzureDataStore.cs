@@ -15,8 +15,8 @@ namespace MasterDetail.Services
 {
 	public class AzureDataStore : IDataStore<Item>
 	{
-        public bool UseAuthentication => false;
-        public MobileServiceAuthenticationProvider AuthProvider => MobileServiceAuthenticationProvider.Facebook;
+        public bool UseAuthentication => true;
+        public MobileServiceAuthenticationProvider AuthProvider => MobileServiceAuthenticationProvider.Twitter;
 
         bool isInitialized;
 		IMobileServiceSyncTable<Item> itemsTable;

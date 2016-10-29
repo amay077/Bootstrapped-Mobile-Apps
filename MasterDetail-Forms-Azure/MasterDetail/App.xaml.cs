@@ -14,6 +14,7 @@ namespace MasterDetail
 	{
 		public static bool AzureNeedsSetup => AzureMobileAppUrl == "https://CONFIGURE-THIS-URL.azurewebsites.net";
 		public static string AzureMobileAppUrl = "https://CONFIGURE-THIS-URL.azurewebsites.net";
+		public static bool AzureNeedsSetup => false;
         public static IDictionary<string, string> LoginParameters => null;
 
         public App()
